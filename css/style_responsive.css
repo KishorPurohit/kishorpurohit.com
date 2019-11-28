@@ -172,7 +172,7 @@
         width: 100%;
         min-height: initial;
     }
-    .workProcess { height: auto; padding: 60px 5px; }
+    .workProcess { height: auto; padding: 60px 5px; margin: 0px; }
     .workProcess .processFlow ul li { margin-bottom: 30px; }
     .workProcess .processFlow ul li label { padding-top: 0px; }
     .workProcess .processFlow ul li .badge { margin: 0px auto; }
@@ -183,7 +183,7 @@
     }
     .workProcess .processFlow ul li .badge { margin: 15px auto; }
     .workProcess .processFlow ul li::after { width: 97%; bottom: 45px; }
-    .getInTouch { text-align: center; height: auto; }
+    .getInTouch { text-align: center; height: auto; margin: 0px; }
     .getInTouch .contactForm { width: auto; }
     .getInTouch .contactForm h4 {font-size: 16px; }
     .getInTouch .contactInfo ul { display: block; }
