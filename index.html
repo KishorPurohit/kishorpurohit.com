@@ -81,8 +81,8 @@
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
                         $('html, body').animate({
-                        scrollTop: (target.offset().top - 80)
-                        }, 1200, "easeInOutExpo");
+                        scrollTop: (target.offset().top - 90)
+                        }, 1400, "easeInOutExpo");
                         return false;
                     }
                 }
@@ -96,7 +96,7 @@
             // Activate scrollspy to add active class to navbar items on scroll
             $('body').scrollspy({
                 target: '#mainNav',
-                offset: 56
+                offset: 150
             });
 
         });
@@ -371,13 +371,10 @@
             <div class="portfolioTabs">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" href="javascript:;">Web</a>
+                        <a class="nav-link" href="javascript:;">iOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:;">Mobile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:;">Both</a>
+                        <a class="nav-link" href="javascript:;">Flutter</a>
                     </li>
                 </ul>
             </div>
@@ -394,12 +391,6 @@
                                     <h3>GSTV Bazar</h3>
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief,
                                         Lorem Ipsum vis not simply random text</p>
-                                    <div class="appLink">
-                                        <label>Available On</label>
-                                        <a href="javascript:;" class="web">Web</a>
-                                        <a href="javascript:;" class="android">Android</a>
-                                        <a href="javascript:;" class="ios">iOS</a>
-                                    </div> <!-- appLink ends -->        
                                 </div>
                                 <!-- overlayWrapper ends -->
                             </div>
@@ -415,12 +406,6 @@
                                         <h3>GSTV Bazar</h3>
                                         <p>Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief,
                                             Lorem Ipsum vis not simply random text</p>
-                                        <div class="appLink">
-                                            <label>Available On</label>
-                                            <a href="javascript:;" class="web">Web</a>
-                                            <a href="javascript:;" class="android">Android</a>
-                                            <a href="javascript:;" class="ios">iOS</a>
-                                        </div> <!-- appLink ends -->        
                                     </div>
                                     <!-- overlayWrapper ends -->
                                 </div>
