@@ -644,6 +644,7 @@ header {
   position: relative;
   font-size: 16px;
   padding: .5rem 1.5rem;
+  font-weight: 600;
 }
 .nav-tabs .active:after {
   content: "\f0d8";
