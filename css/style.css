@@ -12,7 +12,7 @@
 
 /*############################################
 #################  Default Css ###############
-############################################*/
+###########################################*/
 
 * {
   box-sizing: border-box;
@@ -355,11 +355,11 @@ header {
 .aboutMe .socialMedia a.linkedIn  { background: #007bb5; border-color: #007bb5; }
 .aboutMe .socialMedia a:before {
   content: " ";
-  font-family: "Font Awesome 5 Brands";
+  font-family: "FontAwesome";
   line-height: 35px;
   text-align: center;
 } 
-.aboutMe .socialMedia a.facebook:before { content: "\f39e"; }
+.aboutMe .socialMedia a.facebook:before { content: "\f09a"; }
 .aboutMe .socialMedia a.insta:before    { content: "\f16d"; }
 .aboutMe .socialMedia a.linkedIn:before { content: "\f0e1"; }
 .aboutMe .socialMedia a.facebook:hover      { color: #3b5998; } 
@@ -887,13 +887,13 @@ header {
 .getInTouch .contactForm ul li a:before,
 .getInTouch .contactForm ul li p:before {
   content: " ";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'FontAwesome';
   font-weight: 900;
   display: inline-block;
   height: 25px;
   width: 25px;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   line-height: 24px;
   background: #44bdbd;
@@ -906,13 +906,11 @@ header {
   border-radius: 100%;
 }
 .getInTouch .contactForm ul li.call a:before      { 
-  content: "\f095"; 
-  
-  -moz-transform: rotateZ(90deg);
-  -webkit-transform: rotateZ(90deg);
-  transform: rotateZ(90deg);
+  content: "\f095";
+  font-size: 17px;
+  line-height: 27px; 
 }
-.getInTouch .contactForm ul li.location p:before  { content: "\f3c5"; }
+.getInTouch .contactForm ul li.location p:before  { content: "\f041"; font-size: 17px; }
 .getInTouch .contactForm ul li.email a:before     { content: "\f0e0"; }
 .getInTouch .contactForm form .form-group input {
   font-size: 15px;
