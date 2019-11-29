@@ -453,9 +453,14 @@ header {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-.expEdu .infoBox:before {
-  content: "\f0f2";
-  font-family: "FontAwesome";
+.expEdu .ico {
+  position: absolute;
+  top: -18px;
+  left: -10px;
+  width: 100%;
+  text-align: center;
+}
+.expEdu .ico span {
   height: 35px;
   width: 35px;
   background: #44bdbd;
@@ -465,14 +470,16 @@ header {
   text-align: center;
   line-height: 35px;
   position: absolute;
-  top: -18px;
-  left: 205px;
 
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
-.expEdu .education .infoBox:before { content: "\f19d"; }
+.expEdu .ico span:before {
+  content: "\f0f2";
+  font-family: "FontAwesome";
+}
+.expEdu .education .infoBox .ico span:before { content: "\f19d"; }
 .expEdu .infoBox ul { 
   border-left: 1px solid #767676; 
   position: relative; 
