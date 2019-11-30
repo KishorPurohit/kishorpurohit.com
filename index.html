@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.lineProgressbar.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -22,42 +22,42 @@
     <script>
 
         // for header scroll
-        $(window).on("scroll", function() {
-            if($(window).scrollTop() > 50) {
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
                 $(".header").addClass("activeHeader");
             } else {
                 //remove the background property so it comes transparent again (defined in your css)
-            $(".header").removeClass("activeHeader");
+                $(".header").removeClass("activeHeader");
             }
 
-            if($(window).scrollTop() > 100) {
+            if ($(window).scrollTop() > 100) {
                 $(".aboutMeTitle").addClass("active");
                 $(".aboutMeInfo").addClass("active");
                 $(".aboutMeImg").addClass("active");
             } else {
- 
+
             }
-            
-            
+
+
             // for workProcess
-            if($(window).scrollTop() > $ ('#workProcess').offset().top-400) {
+            if ($(window).scrollTop() > $('#workProcess').offset().top - 400) {
                 $(".processFlow ul li").addClass("activeSection");
-            } 
+            }
             else {
             }
 
             // for workProcess
-            if($(window).scrollTop() > $ ('#getInTouch').offset().top-400) {
+            if ($(window).scrollTop() > $('#getInTouch').offset().top - 400) {
                 $(".contactForm").addClass("activeSection");
-            } 
+            }
             else {
             }
 
         });
 
-        
-        $(document).ready(function(){
-           
+
+        $(document).ready(function () {
+
             function hideLoader() {
                 $('#loading').hide();
             }
@@ -67,21 +67,21 @@
             // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
             setTimeout(hideLoader, 20 * 1000);
 
-                     
+
             // for jhanvi landing section text 
-            setTimeout(function() {
+            setTimeout(function () {
                 $('.aboutJhanvi').addClass('activeLandingSec');
             }, 2200);
 
-           
+
             // for navigation scrolling
-            $('.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+            $('.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
                         $('html, body').animate({
-                        scrollTop: (target.offset().top - 90)
+                            scrollTop: (target.offset().top - 90)
                         }, 1400, "easeInOutExpo");
                         return false;
                     }
@@ -89,7 +89,7 @@
             });
 
             // Closes responsive menu when a scroll trigger link is clicked
-            $('.js-scroll-trigger').click(function() {
+            $('.js-scroll-trigger').click(function () {
                 $('.navbar-collapse').collapse('hide');
             });
 
@@ -111,51 +111,52 @@
     ################ landing Section ##############    
     ############################################-->
     <section class="landingSec" id="landingSec">
-        
+
         <header class="header fixed-top">
             <div class="container">
                 <nav class="navbar navbar-expand-sm" id="mainNav">
-                        <a href="#landingSec" class="nav-brand js-scroll-trigger">
-                            <img alt="logo" src="images/kishor.png">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavBar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapsibleNavBar">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#landingSec">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#aboutMe">About me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#services">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#expEdu">Experience</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                                </li>
-                                <li class="nav-item js-scroll-trigger inquiry">
-                                    <a class="nav-link js-scroll-trigger" href="#getInTouch">Inquiry</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- collapse ends -->
-                    </nav>
+                    <a href="#landingSec" class="nav-brand js-scroll-trigger">
+                        <img alt="logo" src="images/kishor.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavBar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavBar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#landingSec">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#aboutMe">About me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#services">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#expEdu">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item js-scroll-trigger inquiry">
+                                <a class="nav-link js-scroll-trigger" href="#getInTouch">Inquiry</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- collapse ends -->
+                </nav>
             </div>
         </header>
 
-            <div class="aboutKishor">
-                <div class="ladingSecInfo">
-                    <span>Hello, I'm</span>
-                    <h1>kishor Rajpurohit</h1>
-                    <label>Sr. ios developer</label>
-                </div>   <!-- ladingSecInfo ends -->
-            </div><!-- aboutJhanvi ends -->
-       
+        <div class="aboutKishor">
+            <div class="ladingSecInfo">
+                <span>Hello, I'm</span>
+                <h1>kishor Rajpurohit</h1>
+                <label>Sr. ios developer</label>
+            </div> <!-- ladingSecInfo ends -->
+        </div><!-- aboutJhanvi ends -->
+
     </section> <!-- landingSec ends -->
 
 
@@ -177,24 +178,28 @@
                     </span>
                     <dt></dt>
                 </div>
-                
+
                 <div class="col col-sm-12 col-lg-6 aboutMeInfo">
-                    <p>I am a self motivated and confident person. I am determined to do given job sincerely and work in benefit of the company. </p>
-                    <p>I am looking to build on my extensive range of technical skills with suitably challenging role.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and types industry. Lorem Ipsum is simply dummy text of the</p>
+                    <p>I am a self motivated and confident person. I am determined to do given job sincerely and work in
+                        benefit of the company. </p>
+                    <p>I am looking to build on my extensive range of technical skills with suitably challenging role.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and types industry. Lorem Ipsum is simply dummy
+                        text of the</p>
                     <p>I am keen to achieve professional development.</p>
                     <div class="socialMedia">
                         <label>Available on</label>
                         <a href="https://www.facebook.com/janvi.trivedi.7" target="_blank" class="facebook"></a>
                         <a href="https://www.instagram.com/jahanvi_trivedi/" target="_blank" class="insta"></a>
-                        <a href="https://www.linkedin.com/in/jahanvi-trivedi-a07972145/" target="_blank" class="linkedIn"></a>
+                        <a href="https://www.linkedin.com/in/jahanvi-trivedi-a07972145/" target="_blank"
+                            class="linkedIn"></a>
                     </div> <!-- socialMedia ends -->
                     <a href="" class="downldCV">Download CV</a>
                 </div>
-               
+
                 <!-- aboutUsImg ends -->
                 <div class="clearfix"></div>
-            </div>  <!-- row ends -->
+            </div> <!-- row ends -->
         </div> <!-- container ends -->
     </section>
     <!-- aboutUs ends -->
@@ -208,8 +213,9 @@
         <div class="container">
             <div class="title">
                 <h2><strong>Skills</strong></h2>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin</p>
-            </div>  <!-- title ends -->
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin</p>
+            </div> <!-- title ends -->
 
             <div class="row serviceContainer rounded">
                 <div class="skillsInfo">
@@ -221,7 +227,7 @@
                     <div class="prgLabel" id="advanceJava" data-label="Advanceed Java" data-init="true"></div>
                     <div class="prgLabel" id="SQLite" data-label="SQLite" data-init="true"></div>
                     <div class="prgLabel" id="webService" data-label="Web Services" data-init="true"></div>
-                </div>  <!-- skillsInfo ends -->
+                </div> <!-- skillsInfo ends -->
             </div>
             <!-- serviceContainer ends -->
         </div>
@@ -265,99 +271,99 @@
     <section id="expEdu" class="expEdu">
         <div class="container">
             <div class="row">
-            <div class="col-sm-12 col-lg-6 experience">
-                <h2>My Experience</h2>
-                <div class="infoBox">
-                    <div class="ico"> <span></span> </div>
-                    <ul>
-                        <li>
-                            <span class="year">2017</span>
-                            <strong>sr ios developer</strong>
-                            <a href="">Auxano Global Services</a>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-                        </li>
-                    </ul>
-                </div> <!-- infoBox ends -->
+                <div class="col-sm-12 col-lg-6 experience">
+                    <h2>My Experience</h2>
+                    <div class="infoBox">
+                        <div class="ico"> <span></span> </div>
+                        <ul>
+                            <li>
+                                <span class="year">2017</span>
+                                <strong>sr ios developer</strong>
+                                <a href="">Auxano Global Services</a>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                            </li>
+                        </ul>
+                    </div> <!-- infoBox ends -->
                 </div>
 
                 <div class="col-sm-12 col-lg-6 education">
-                        <h2>My Education</h2>
-                        <div class="infoBox">
-                            <div class="ico"> <span></span> </div>
-                            <ul>
-                                <li>
-                                    <span class="year">2017</span>
-                                    <strong>Msc(IT)</strong>
-                                    <a href="">GLS University</a>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-                                </li>
-                                <li>
-                                    <span class="year">2015</span>
-                                    <strong>Bsc(CA & IT)</strong>
-                                    <a href="">Ganpat University</a>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-                                </li>
-                            </ul>
-                        </div> <!-- infoBox ends -->
-                        </div>
-                <div class="clearfix"></div>
+                    <h2>My Education</h2>
+                    <div class="infoBox">
+                        <div class="ico"> <span></span> </div>
+                        <ul>
+                            <li>
+                                <span class="year">2017</span>
+                                <strong>Msc(IT)</strong>
+                                <a href="">GLS University</a>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                            </li>
+                            <li>
+                                <span class="year">2015</span>
+                                <strong>Bsc(CA & IT)</strong>
+                                <a href="">Ganpat University</a>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                            </li>
+                        </ul>
+                    </div> <!-- infoBox ends -->
                 </div>
-            </div>   <!-- container ends -->
-    </section>  <!-- expEdu ends -->
+                <div class="clearfix"></div>
+            </div>
+        </div> <!-- container ends -->
+    </section> <!-- expEdu ends -->
 
 
 
- <!--###########################################
+    <!--###########################################
     #################### work process #############    
     ############################################-->
 
     <section class="row workProcess" id="workProcess">
-            <div class="container">
-                <div class="title">
-                    <h2><strong>My Work Process</strong></h2>
-                </div>
-                <!-- title ends -->
-    
-                <div class="processFlow">
-                    <!-- <span class="progressLine"></span> -->
-                    <ul class="row">
-                        <li class="col col-sm-2 concept">
-                            <span class="processImg"></span>
-                            <span class="badge">1</span>
-                            <label for="">concept</label>
-                        </li>
-                        <li class="col col-sm-2 sketch">
-                            <span class="processImg"></span>
-                            <span class="badge">2</span>
-                            <label for="">sketch</label>
-                        </li>
-                        <li class="col col-sm-2 design">
-                            <span class="processImg"></span>
-                            <span class="badge">3</span>
-                            <label for="">design</label>
-                        </li>
-                        <li class="col col-sm-2 code">
-                            <span class="processImg"></span>
-                            <span class="badge">4</span>
-                            <label for="">code</label>
-                        </li>
-                        <li class="col col-sm-2 test">
-                            <span class="processImg"></span>
-                            <span class="badge">5</span>
-                            <label for="">test</label>
-                        </li>
-                        <li class="col col-sm-2 launch">
-                            <span class="processImg"></span>
-                            <span class="badge">6</span>
-                            <label for="">launch</label>
-                        </li>
-                    </ul>
-                </div>
-                <!-- processFlow ends -->
+        <div class="container">
+            <div class="title">
+                <h2><strong>My Work Process</strong></h2>
             </div>
-            <!-- container ends -->
-        </section>
-        <!-- workProcess ends -->
+            <!-- title ends -->
+
+            <div class="processFlow">
+                <!-- <span class="progressLine"></span> -->
+                <ul class="row">
+                    <li class="col col-sm-2 concept">
+                        <span class="processImg"></span>
+                        <span class="badge">1</span>
+                        <label for="">concept</label>
+                    </li>
+                    <li class="col col-sm-2 sketch">
+                        <span class="processImg"></span>
+                        <span class="badge">2</span>
+                        <label for="">sketch</label>
+                    </li>
+                    <li class="col col-sm-2 design">
+                        <span class="processImg"></span>
+                        <span class="badge">3</span>
+                        <label for="">design</label>
+                    </li>
+                    <li class="col col-sm-2 code">
+                        <span class="processImg"></span>
+                        <span class="badge">4</span>
+                        <label for="">code</label>
+                    </li>
+                    <li class="col col-sm-2 test">
+                        <span class="processImg"></span>
+                        <span class="badge">5</span>
+                        <label for="">test</label>
+                    </li>
+                    <li class="col col-sm-2 launch">
+                        <span class="processImg"></span>
+                        <span class="badge">6</span>
+                        <label for="">launch</label>
+                    </li>
+                </ul>
+            </div>
+            <!-- processFlow ends -->
+        </div>
+        <!-- container ends -->
+    </section>
+    <!-- workProcess ends -->
 
 
     <!--###########################################
@@ -368,14 +374,14 @@
         <div class="container">
             <div class="title">
                 <h2><strong>My Portfolio</strong></h2>
-            </div>  <!-- title ends -->
+            </div> <!-- title ends -->
 
             <div class="portfolioTabs">
                 <ul class="nav nav-tabs">
-                    <li class="nav-item">
+                    <li class="nav-item" id="ios-menu" >
                         <a class="nav-link" href="javascript:;">iOS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="flutter-menu" >
                         <a class="nav-link" href="javascript:;">Flutter</a>
                     </li>
                 </ul>
@@ -383,73 +389,135 @@
             <!-- portfolioTabs ends -->
 
             <div class="row cardWrapper">
-                <div class="owl-carousel owl-theme portfolioCarousal">
+
+                <!-- iOS Projects -->
+                <div class="owl-carousel owl-theme portfolioCarousal" id="ios-project">
                     <div class="item card">
                         <img class="card-img-top" src="images/portfolio1.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">5 Tix</h4>
                             <div class="cardOverlay">
                                 <div class="overlayWrapper">
-                                    <h3>GSTV Bazar</h3>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief,
+                                    <h3>iOS Project</h3>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random textContrary to
+                                        popular belief,
                                         Lorem Ipsum vis not simply random text</p>
                                 </div>
                                 <!-- overlayWrapper ends -->
                             </div>
                             <!-- cardOverlay ends -->
                         </div>
-                    </div>  <!-- card ends -->
+                    </div> <!-- card ends -->
                     <div class="item card">
-                            <img class="card-img-top" src="images/portfolio1.png" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title">5 Tix</h4>
-                                <div class="cardOverlay">
-                                    <div class="overlayWrapper">
-                                        <h3>GSTV Bazar</h3>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief,
-                                            Lorem Ipsum vis not simply random text</p>
-                                    </div>
-                                    <!-- overlayWrapper ends -->
+                        <img class="card-img-top" src="images/portfolio1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">5 Tix</h4>
+                            <div class="cardOverlay">
+                                <div class="overlayWrapper">
+                                    <h3>iOS Project</h3>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random textContrary to
+                                        popular belief,
+                                        Lorem Ipsum vis not simply random text</p>
                                 </div>
-                                <!-- cardOverlay ends -->
+                                <!-- overlayWrapper ends -->
                             </div>
-                        </div>  <!-- card ends -->
-                </div>  <!-- owl-carousel ends -->
+                            <!-- cardOverlay ends -->
+                        </div>
+                    </div> <!-- card ends -->
+                </div>
+                <!-- cardWrapper ends -->
+
+                <!-- Flutter Projects -->
+                <div class="owl-carousel owl-theme portfolioCarousal" id="flutter-project">
+                    <div class="item card">
+                        <img class="card-img-top" src="images/portfolio1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">5 Tix</h4>
+                            <div class="cardOverlay">
+                                <div class="overlayWrapper">
+                                    <h3>Flutter Project</h3>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random textContrary to
+                                        popular belief,
+                                        Lorem Ipsum vis not simply random text</p>
+                                </div>
+                                <!-- overlayWrapper ends -->
+                            </div>
+                            <!-- cardOverlay ends -->
+                        </div>
+                    </div> <!-- card ends -->
+
+                    <div class="item card">
+                        <img class="card-img-top" src="images/portfolio1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">5 Tix</h4>
+                            <div class="cardOverlay">
+                                <div class="overlayWrapper">
+                                    <h3>Flutter Project</h3>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random textContrary to
+                                        popular belief,
+                                        Lorem Ipsum vis not simply random text</p>
+                                </div>
+                                <!-- overlayWrapper ends -->
+                            </div>
+                            <!-- cardOverlay ends -->
+                        </div>
+                    </div> <!-- card ends -->
+                </div>
+                <!-- cardWrapper ends -->
+
+                <script>
+                    $(document).ready(function () {
+
+                        var $owl = $('.portfolioCarousal').owlCarousel({
+                            loop: true,
+                            smartSpeed: 600,
+                            autoplay: true,
+                            responsiveClass: true,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                600: {
+                                    items: 1
+                                },
+                                1000: {
+                                    items: 3
+                                }
+                            }
+                        });
+
+                        /* $owl.trigger('refresh.owl.carousel');
+
+                        function loadOwlCarousel() {
+
+                        } */
+
+                        $('#ios-menu').click(function () {
+                            $('#flutter-project').hide();
+                            $('#ios-project').show();
+                            // $owl.trigger('refresh.owl.carousel');
+                        });
+
+                        $('#flutter-menu').click(function () {
+                            $('#ios-project').hide();
+                            $('#flutter-project').show();
+                            // $owl.trigger('refresh.owl.carousel');
+                        });
+
+                        $('#ios-menu').click();
+                    });
+                </script>
             </div>
-            <!-- cardWrapper ends -->
-        
-            <script>
-                $(document).ready(function() {
-                    $('.portfolioCarousal').owlCarousel({
-                    loop: true,
-                    smartSpeed: 600,
-                    autoplay:true,
-                    responsiveClass: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 1
-                        },
-                        1000: {
-                            items: 3
-                        }
-                    }
-                    })
-                })
-            </script>
-        </div>
-        <!-- container ends -->
+            <!-- container ends -->
     </section>
     <!-- portfolio ends -->
 
 
-   
+
     <!--###########################################
     #################### get in touch #############    
     ############################################-->
- 
+
     <section class="row getInTouch" id="getInTouch">
         <div class="container">
             <div class="col col-lg-6 contactForm">
@@ -476,14 +544,16 @@
                         <input type="text" class="form-control" placeholder="Your Name">
                     </div>
                     <div class="form-group email">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" name="email"> </div>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                    </div>
                     <div class="form-group password">
                         <input type="tel" class="form-control" id="pwd" placeholder="Your Phone Number" name="pswd">
                     </div>
                     <div class="clearfix"></div>
                     <div class="form-group message">
-                        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Your Message"></textarea>
-                      </div>
+                        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3"
+                            placeholder="Your Message"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
@@ -513,7 +583,5 @@
     </footer>
     <!-- Footer -->
 </body>
-
-
 
 </html>
