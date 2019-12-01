@@ -582,9 +582,9 @@
                     $(document).ready(function () {
 
                         var $owl = $('.portfolioCarousal').owlCarousel({
-                            loop: false,
+                            loop: true,
                             smartSpeed: 600,
-                            autoplay: true,
+                            autoplay: false,
                             responsiveClass: true,
                             responsive: {
                                 0: {
@@ -594,7 +594,7 @@
                                     items: 1
                                 },
                                 1000: {
-                                    items: 1
+                                    items: 3
                                 }
                             }
                         });
